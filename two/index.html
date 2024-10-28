@@ -5,10 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDT | Day 2</title>
+    <style>
+        #navbar {
+            background-color: red;
+        }
+
+        .navClass {
+            background-color: #888;
+        }
+        .link{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="./success.html">
+    <div id="navbar" class="navClass" style="background-color: black;">
+        <a class="link" href="./index.html">Home</a>
+        <a class="link" href="./submit.html">Submit</a>
+        <a class="link" href="./success.html">Success</a>
+    </div>
+    <form action="./success.html" class="navClass">
         <!-- press ctrl + space to get the various types -->
         <input type="">
         
@@ -22,7 +40,7 @@
             <input name="second_name" type="text" placeholder="Enter your second name"/>
         </div>
 
-        <div>
+        <div style="color: red; font-size: 16px">
             <label for="file">Input adhaar card:</label>
             <input type="file" name="file" id=""/>
         </div>
